@@ -46,7 +46,7 @@ Today I head the #engineering division @ globsit.it; we design #AI controlled sy
   <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
   <img alt="android" src="https://img.shields.io/badge/-Android-007ACC?style=flat-square&logo=android&logoColor=white" />
   <img alt="Arduino" src="https://img.shields.io/badge/-Arduino-ea2845?style=flat-square&logo=arduino&logoColor=white" />
-  <img alt="Raspberry" src="https://img.shields.io/badge/-Raspberry-5849BE?style=flat-square&logo=raspberry&logoColor=white" />
+  <img alt="Raspberry" src="https://img.shields.io/badge/-Raspberry-5849BE?style=flat-square&logo=raspberrypi&logoColor=white" />
   <img alt="STm" src="https://img.shields.io/badge/-STm-CC6699?style=flat-square&logo=STMicroelectronics&logoColor=white" />
   <img alt="Apple" src="https://img.shields.io/badge/-Apple-311C87?style=flat-square&logo=apple&logoColor=white" />
   <img alt="Homebrew" src="https://img.shields.io/badge/-Homebrew-CB3837?style=flat-square&logo=homebrew&logoColor=white" />
