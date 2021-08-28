@@ -28,8 +28,9 @@ Top Skills:
 
 Hi, my name is **Gioele Stefano Luca Fierro**. I'm a computer engineer. 
 
-As a child I enjoyed constructing cardboard hi-tech devices. 
-Today I head the #engineering division @ globsit.it; we design #AI controlled systems that help our customers to better manage #cybersecurity and #production.
+As a child I enjoyed constructing cardboard hi-tech devices. Now I head the #engineering division <a href="https://globsit.com">@globsit</a>. <br />
+We design **#AI** controlled systems for **#cybersecurity**, **#SCADA**, **#drones** and **#robots**. We also run <a href="https://twitter.it">@TwitterIT</a>, a next gen sentiment analysis tool.
+
 
 
 <h2 align="center">
