@@ -7,13 +7,6 @@
  \______  /_______  /|_______ \___  /   
         \/        \/         \/   \/   
           :#/ GioeleSLFierro
-          
-
-        
-Hi, my name is **Gioele Stefano Luca Fierro**. I'm a computer engineer. 
-
-As a child I enjoyed constructing cardboard hi-tech devices. Today I head the #engineering division @ globsit.it; we design #AI controlled systems that help our customers to better manage #cybersecurity and #production.
-
 
 
 Languages:
@@ -24,17 +17,20 @@ Languages:
 
 
 
-Skills: 
+Top Skills: 
 - Unix CLI       ⭐️⭐️⭐️⭐️⭐️
 - CyberSecurity  ⭐️⭐️⭐️⭐️⭐️
 - Networking     ⭐️⭐️⭐️⭐️⭐️
 - Robotics       ⭐️⭐️⭐️⭐️
-- Bass         ⭐️⭐️
-
-
-
+- Bass Guitar    ⭐️⭐️
 
 ```
+
+Hi, my name is **Gioele Stefano Luca Fierro**. I'm a computer engineer. 
+
+As a child I enjoyed constructing cardboard hi-tech devices. 
+Today I head the #engineering division @ globsit.it; we design #AI controlled systems that help our customers to better manage #cybersecurity and #production.
+
 
 <h2 align="center">
   Tech stack
