@@ -1,16 +1,53 @@
-### Hi there 👋
+```
 
-<!--
-**gslf/gslf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+ ________  _________.____   ___________
+ /  _____/ /   _____/|    |  \_   _____/
+/   \  ___ \_____  \ |    |   |    __)  
+\    \_\  \/        \|    |___|     \   
+ \______  /_______  /|_______ \___  /   
+        \/        \/         \/   \/   
+          :#/ GioeleSLFierro
+          
 
-Here are some ideas to get you started:
+        
+Hi, my name is **Gioele Stefano Luca Fierro**. I'm a computer engineer. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+Languages:
+- C/C++       ⭐️⭐️⭐️⭐️⭐️
+- Python      ⭐️⭐️⭐️⭐️⭐️
+- JavaScript  ⭐️⭐️⭐️⭐️
+- Go          ⭐️⭐️⭐️
+
+
+
+Skills: 
+- CyberSecurity  ⭐️⭐️⭐️⭐️⭐️
+- Networking     ⭐️⭐️⭐️⭐️⭐️
+- Robotics       ⭐️⭐️⭐️⭐️
+- 
+
+
+
+```
+
+<h2 align="center">
+  My Github Stats<img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
+</h2>
+ 
+<br>
+
+<p align = "center">
+  <img  src = "https://github-readme-stats.vercel.app/api?username=gslf&show_icons=true&theme=dark&line_height=27">
+</p>
+
+<p align = "center">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=gslf&theme=dark">
+</p>
+
+<p align = "center">
+ <img  src="https://github-readme-streak-stats.herokuapp.com/?user=gslf&show_icons=true&locale=en&layout=compact&theme=dark&line_height=0" />
+</p> 
+
+
