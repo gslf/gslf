@@ -4,7 +4,26 @@
         <link>http://gslf.it/posts/</link>
         <description>All Posts | :#/ Gioele SL Fierro</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>hck@gslf.it (GioeleSLFierro)</managingEditor>
-            <webMaster>hck@gslf.it (GioeleSLFierro)</webMaster><copyright>Gioele SL Fierro 2021 ©.</copyright><lastBuildDate>Sat, 09 Oct 2021 18:44:20 &#43;0200</lastBuildDate><atom:link href="http://gslf.it/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>hck@gslf.it (GioeleSLFierro)</webMaster><copyright>Gioele SL Fierro 2021 ©.</copyright><lastBuildDate>Thu, 16 Dec 2021 21:49:58 &#43;0100</lastBuildDate><atom:link href="http://gslf.it/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Go Types and Variable Declaration</title>
+    <link>http://gslf.it/go_types/</link>
+    <pubDate>Thu, 16 Dec 2021 21:49:58 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://gslf.it/go_types/</guid>
+    <description><![CDATA[Go is a strongly typed language: it is necessary to specify the type for each declared variable. In go the basic types available to the programmer are:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  // Boolean [ true or false ] bool // String [ &#34;Example&#34; ] string // Integer numbers [ 0, -1, 100, -1000, ... ] int int8 int16 int32 int64 // Unsigned integer numbers [ 0, 1, 100, 1000, .]]></description>
+</item><item>
+    <title>Go Brackets</title>
+    <link>http://gslf.it/go-brackets/</link>
+    <pubDate>Sun, 07 Nov 2021 19:08:24 &#43;0100</pubDate>
+    <author>Author</author>
+    <guid>http://gslf.it/go-brackets/</guid>
+    <description><![CDATA[There is little agreement among developers about how the brackets should be used. There are basically three ways to write a block of code with languages that require curly brackets.
+STYLE 1
+1 2 3  if response == True{ return &#34;OK&#34;; }   STYLE 2
+1 2 3 4  if response == True { return &#34;OK&#34;; }   STYLE 3
+1 2  if response == True return &#34;OK&#34;;   Countless words have been spent to prove one or the other faction right.]]></description>
+</item><item>
     <title>[MachineLearning] How to build a spam classifier</title>
     <link>http://gslf.it/mlnaivespamclassifier/</link>
     <pubDate>Sat, 09 Oct 2021 18:44:20 &#43;0200</pubDate>
