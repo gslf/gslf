@@ -16,6 +16,16 @@
     <meta name="baidu-site-verification" content="{{ . }}" />
 {{- end -}}
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ4XKN1SQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WJ4XKN1SQ7');
+</script>
+
 {{- /* Home SEO */ -}}
 {{- if .IsHome -}}
     <script type="application/ld+json">

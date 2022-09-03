@@ -7,7 +7,7 @@ draft: false
 Go is a strongly typed language: it is necessary to specify the type for each declared variable. 
 In go the basic types available to the programmer are:
 
-```
+```go
 // Boolean [ true or false ] 
 bool
 
@@ -31,7 +31,7 @@ The number following some integer, floating-point, and complex types represents 
 
 In addition to these primary types, there are other derived types that are nothing more than aliases of the primary types. 
 
-```
+```go
 // Simple byte value
 byte // alias for uint8
 
@@ -41,13 +41,13 @@ rune // alias for int32
 
 There are two ways to declare a variable of a specific type, you can use the complete construct:
 
-```
+```go
 var myvar int = 1
 ```
 
 or the short form:
 
-```
+```go
 myvar := 1
 ```
 
