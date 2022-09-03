@@ -1,0 +1,128 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>RegEx in python - :#/ Gioele SL Fierro</title><meta name=Description content="Gioele Stefano Luca Fierro"><meta property="og:title" content="RegEx in python"><meta property="og:description" content="What is a RegEx A RegEx (Regular Expression) is a powerfull tool for search and extract patterns in text, and is fundamental for NLP (Natural Language Processing). The scope of this tool is very broad, ranging from web scraping to Big Data analysis systems. The standard Python library integrates the re module which contains everything needed to use RegEx.
+RegEx functions To use a RegEx in python just import the ** re ** module and use one of the functions available to search for patterns."><meta property="og:type" content="article"><meta property="og:url" content="http://gslf.it/regex-python/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-08-05T22:08:38+02:00"><meta property="article:modified_time" content="2022-08-05T22:08:38+02:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="RegEx in python"><meta name=twitter:description content="What is a RegEx A RegEx (Regular Expression) is a powerfull tool for search and extract patterns in text, and is fundamental for NLP (Natural Language Processing). The scope of this tool is very broad, ranging from web scraping to Big Data analysis systems. The standard Python library integrates the re module which contains everything needed to use RegEx.
+RegEx functions To use a RegEx in python just import the ** re ** module and use one of the functions available to search for patterns."><meta name=application-name content="GSLF"><meta name=apple-mobile-web-app-title content="GSLF"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://gslf.it/regex-python/><link rel=prev href=http://gslf.it/nlp-phrases-classification/><link rel=next href=http://gslf.it/regex-nlp/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ4XKN1SQ7"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-WJ4XKN1SQ7")</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"RegEx in python","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/gslf.it\/regex-python\/"},"image":["http:\/\/gslf.it\/images\/Apple-Devices-Preview.png"],"genre":"posts","wordcount":498,"url":"http:\/\/gslf.it\/regex-python\/","datePublished":"2022-08-05T22:08:38+02:00","dateModified":"2022-08-05T22:08:38+02:00","license":"Gioele SL Fierro 2021 ©.","publisher":{"@type":"Organization","name":"Gioele SL Fierro","logo":"http:\/\/gslf.it\/images\/profile.jpg"},"author":{"@type":"Person","name":"GioeleSLFierro"},"description":""}</script></head><body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":""==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:""==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=":#/ Gioele SL Fierro">:#/ Gioele SL Fierro</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>Posts </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=":#/ Gioele SL Fierro">:#/ Gioele SL Fierro</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><a class=menu-item href=/posts/ title>Posts</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">RegEx in python</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>GioeleSLFierro</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=08-05-2022>08-05-2022</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;498 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#what-is-a-regex>What is a RegEx</a></li><li><a href=#regex-functions>RegEx functions</a></li><li><a href=#regex-basic-pattern-rules>RegEx basic pattern rules</a></li></ul></nav></div></div><div class=content id=content><h2 id=what-is-a-regex>What is a RegEx</h2><p>A RegEx (Regular Expression) is a powerfull tool for search and extract patterns in text, and is fundamental for NLP (Natural Language Processing). The scope of this tool is very broad, ranging from web scraping to Big Data analysis systems. The standard Python library integrates the <strong>re</strong> module which contains everything needed to use RegEx.</p><h2 id=regex-functions>RegEx functions</h2><p>To use a RegEx in python just import the ** re ** module and use one of the functions available to search for patterns.</p><table><thead><tr><th>Function</th><th>Use</th></tr></thead><tbody><tr><td>search</td><td>Scan through string looking for the first location where the regular expression pattern produces a match, and return a corresponding match object</td></tr><tr><td>findall</td><td>Return all non-overlapping matches of pattern in string, as a list of strings or tuples.</td></tr><tr><td>finditer</td><td>Return an iterator yielding match objects over all non-overlapping matches for the RE pattern in string.</td></tr><tr><td>split</td><td>Split string by the occurrences of pattern.</td></tr><tr><td>sub</td><td>Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement repl.</td></tr></tbody></table><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>re</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>sample_txt</span> <span class=o>=</span> <span class=s2>&#34;Hello World, hello world!&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>sample_pattern</span> <span class=o>=</span> <span class=s2>&#34;hello&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>search_result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>search</span><span class=p>(</span><span class=n>sample_pattern</span><span class=p>,</span> <span class=n>sample_txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Search result:&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>search_result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>#Search result:</span>
+</span></span><span class=line><span class=cl><span class=c1>#re.Match object; span=(13, 18), match=&#39;hello&#39;&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>findall_result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>findall</span><span class=p>(</span><span class=n>sample_pattern</span><span class=p>,</span> <span class=n>sample_txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Findall result:&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>findall_result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>#Findall result:</span>
+</span></span><span class=line><span class=cl><span class=c1>#[&#39;hello&#39;]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>finditer_result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>finditer</span><span class=p>(</span><span class=n>sample_pattern</span><span class=p>,</span> <span class=n>sample_txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Finditer result:&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>finditer_result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>#Finditer result:</span>
+</span></span><span class=line><span class=cl><span class=c1>#&lt;callable_iterator object at 0x102ad3700&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>split_result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>split</span><span class=p>(</span><span class=n>sample_pattern</span><span class=p>,</span> <span class=n>sample_txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Split result:&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>split_result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>#Split result:</span>
+</span></span><span class=line><span class=cl><span class=c1>#[&#39;Hello World, &#39;, &#39; world!&#39;]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>sub_result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>sub</span><span class=p>(</span><span class=n>sample_pattern</span><span class=p>,</span> <span class=s2>&#34;goodmorning&#34;</span><span class=p>,</span>  <span class=n>sample_txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Sub result:&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>sub_result</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c1>#Sub result:</span>
+</span></span><span class=line><span class=cl><span class=c1>#Hello World, goodmorning world!</span>
+</span></span></code></pre></td></tr></table></div></div><h2 id=regex-basic-pattern-rules>RegEx basic pattern rules</h2><p>The functions are very simple to use, but you have to define a pattern, and this is slightly more complex. Patterns are defined as strings that contain certain character sequences that define the rules used to match against a string. In the table below there are the most used rules in RegEx, just below some examples that show how to use them in practice.</p><table><thead><tr><th>Rule</th><th>Use</th></tr></thead><tbody><tr><td>[]</td><td>A set of characters to match</td></tr><tr><td>{}</td><td>Number of occurences</td></tr><tr><td>()</td><td>Group</td></tr><tr><td>$</td><td>End with</td></tr><tr><td>^</td><td>Start with</td></tr><tr><td>*</td><td>Zero or more occurrences</td></tr><tr><td>+</td><td>One or more occurrences</td></tr><tr><td>?</td><td>Zero or one occurrences</td></tr></tbody></table><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>import</span> <span class=nn>re</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Find all numbers</span>
+</span></span><span class=line><span class=cl><span class=n>txt</span><span class=o>=</span> <span class=s2>&#34;test1234regex&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>pattern</span> <span class=o>=</span> <span class=sa>r</span><span class=s2>&#34;[0-9]&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>findall</span><span class=p>(</span><span class=n>pattern</span><span class=p>,</span> <span class=n>txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>result</span><span class=p>)</span> <span class=c1># [&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Find all number couples</span>
+</span></span><span class=line><span class=cl><span class=n>txt</span><span class=o>=</span> <span class=s2>&#34;test1234regex&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>pattern</span> <span class=o>=</span> <span class=sa>r</span><span class=s2>&#34;[0-9]</span><span class=si>{2}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>findall</span><span class=p>(</span><span class=n>pattern</span><span class=p>,</span> <span class=n>txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>result</span><span class=p>)</span> <span class=c1># [&#39;12&#39;, &#39;34&#39;]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Find a word that start with t and end with t</span>
+</span></span><span class=line><span class=cl><span class=n>txt</span><span class=o>=</span> <span class=s2>&#34;test&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>pattern</span> <span class=o>=</span> <span class=sa>r</span><span class=s2>&#34;^t\w+t$&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>findall</span><span class=p>(</span><span class=n>pattern</span><span class=p>,</span> <span class=n>txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>result</span><span class=p>)</span> <span class=c1># [&#39;test&#39;]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Find all numbers</span>
+</span></span><span class=line><span class=cl><span class=n>txt</span><span class=o>=</span> <span class=s2>&#34;The quick brown fox jumps over the lazy dog.&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>pattern</span> <span class=o>=</span> <span class=sa>r</span><span class=s2>&#34;\b\w</span><span class=si>{5}</span><span class=s2>\b&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>result</span> <span class=o>=</span> <span class=n>re</span><span class=o>.</span><span class=n>findall</span><span class=p>(</span><span class=n>pattern</span><span class=p>,</span> <span class=n>txt</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>result</span><span class=p>)</span> <span class=c1># [&#39;quick&#39;, &#39;brown&#39;, &#39;jumps&#39;]</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 08-05-2022</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/regex-python/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://gslf.it/regex-python/ data-title="RegEx in python" data-via=gslf_dev><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://gslf.it/regex-python/><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="Share on Linkedin" data-sharer=linkedin data-url=http://gslf.it/regex-python/><i class="fab fa-linkedin fa-fw"></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=http://gslf.it/regex-python/ data-title="RegEx in python" data-web><i class="fab fa-whatsapp fa-fw"></i></a></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/nlp-phrases-classification/ class=prev rel=prev title="[NLP] Phrases Classification"><i class="fas fa-angle-left fa-fw"></i>[NLP] Phrases Classification</a>
+<a href=/regex-nlp/ class=next rel=next title="Python RegEx for NLP">Python RegEx for NLP<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Made with love in southern Italy by Gioele SL Fierro with hugo.</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2021 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>GioeleSLFierro</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:-1},comment:{}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
