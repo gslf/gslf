@@ -13,7 +13,7 @@ Languages:
 - C/C++       ⭐️⭐️⭐️⭐️⭐️
 - Python      ⭐️⭐️⭐️⭐️⭐️
 - JavaScript  ⭐️⭐️⭐️⭐️
-- Go          ⭐️⭐️⭐️
+- Rust        ⭐️⭐️
 
 
 
