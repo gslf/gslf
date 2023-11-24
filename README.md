@@ -54,8 +54,8 @@ I write (and speak) about AI ethics and technology-driven evolution. I am also a
 
 ```
 Languages:
-- C/C++       ⭐️⭐️⭐️⭐️⭐️
 - C#          ⭐️⭐️⭐️⭐️⭐️
+- C/C++       ⭐️⭐️⭐️⭐️⭐️
 - Python      ⭐️⭐️⭐️⭐️⭐️
 - JavaScript  ⭐️⭐️⭐️⭐️
 
